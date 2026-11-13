@@ -1,0 +1,13 @@
+.git
+.openai
+.env
+.env.*
+!.env.example
+.test-tmp
+dist
+docs
+*.zip
+*.tar.gz
+*.sqlite*
+selfhost/*.test.js
+node_modules

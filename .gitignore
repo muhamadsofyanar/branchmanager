@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+.test-tmp/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+backups/
+node_modules/
+*.zip
+*.tar.gz

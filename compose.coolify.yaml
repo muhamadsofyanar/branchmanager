@@ -1,0 +1,18 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    environment:
+      APP_URL: ${APP_URL:?Isi APP_URL}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:?Isi ADMIN_EMAIL}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?Isi ADMIN_PASSWORD}
+      COOKIE_SECURE: "true"
+      TRUST_PROXY: "true"
+      DATABASE_PATH: /data/mulia.sqlite
+      PORT: 3000
+    expose:
+      - "3000"
+    volumes:
+      - mulia_data:/data
+volumes:
+  mulia_data:

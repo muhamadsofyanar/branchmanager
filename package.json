@@ -1,0 +1,1 @@
+{"name":"stifin-mulia-learning","version":"1.0.0","private":true,"type":"module","engines":{"node":">=24 <25"},"scripts":{"start":"node selfhost/server.js","test":"node --test"}}
